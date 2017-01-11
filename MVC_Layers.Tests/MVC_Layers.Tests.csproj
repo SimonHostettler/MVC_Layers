@@ -92,9 +92,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVC_Layers.csproj">
+    <ProjectReference Include="..\MVC_Layers.Web\MVC_Layers.Web.csproj">
       <Project>{773827c2-785c-497f-9b56-49719f3d7c86}</Project>
-      <Name>MVC_Layers</Name>
+      <Name>MVC_Layers.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
