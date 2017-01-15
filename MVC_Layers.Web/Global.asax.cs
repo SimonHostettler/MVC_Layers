@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MVC_Layers.Data;
+using MVC_Layers.Web.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,10 +14,16 @@ namespace MVC_Layers
     {
         protected void Application_Start()
         {
+
+            // Init database
+            System.Data.Entity.Database.SetInitializer(new StoreSeedData());
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Bootstrapper.Run();
         }
     }
 }
