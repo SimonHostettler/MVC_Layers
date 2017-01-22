@@ -12,8 +12,8 @@ namespace MVC_Layers.Web.Mappings
         {
             Mapper.Initialize(x =>
             {
-                x.AddProfile<DomainToViewModelMappingProfile>();
-                x.AddProfile<ViewModelToDomainMappingProfile>();
+                x.AddProfile<ViewModelMappingProfileToDomain>();
+                x.AddProfile<ViewModelMappingProfileToDomain>();
             });
         }
     }

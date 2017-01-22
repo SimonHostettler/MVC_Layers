@@ -8,18 +8,18 @@ using System.Web;
 
 namespace MVC_Layers.Web.Mappings
 {
-    public class DomainToViewModelMappingProfile : Profile
+    public class ViewModelMappingProfileToDomain : Profile
     {
         public override string ProfileName
         {
-            get { return "DomainToViewModelMappings"; }
+            get { return "ViewModelMappingProfileToDomain"; }
         }
 
-        public DomainToViewModelMappingProfile()
+        public ViewModelMappingProfileToDomain()
         {
             var config = new MapperConfiguration(cfg => {
-                cfg.CreateMap<Kurs, KursViewModel>();
-                cfg.CreateMap<Angebot, AngebotViewModel>();
+                cfg.CreateMap<KursViewModel, Kurs>();
+                cfg.CreateMap<AngebotViewModel, Angebot>();
             });
         }
     }

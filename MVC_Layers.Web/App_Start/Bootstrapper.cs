@@ -1,8 +1,10 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
+using AutoMapper;
 using MVC_Layers.Data.Infrastructure;
 using MVC_Layers.Data.Repositories;
 using MVC_Layers.Service;
+using MVC_Layers.Web.Mappings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +19,8 @@ namespace MVC_Layers.Web.App_Start
         public static void Run()
         {
             SetAutofacContainer();
+
+            AutoMapperConfiguration.Configure();
         }
 
         private static void SetAutofacContainer()

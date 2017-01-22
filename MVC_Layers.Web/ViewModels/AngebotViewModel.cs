@@ -10,7 +10,6 @@ namespace MVC_Layers.Web.ViewModels
     {
         public int AngebotID { get; set; }
         public string AngebotTitel { get; set; }
-
         public List<Kurs> Kurse { get; set; }
     }
 }
