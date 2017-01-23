@@ -8,13 +8,10 @@ namespace MVC_Layers.Web.Mappings
 {
     public class AutoMapperConfiguration
     {
-        public static void Configure()
+        public IMapper GetConfigure()
         {
-            Mapper.Initialize(x =>
-            {
-                x.AddProfile<ViewModelMappingProfileToDomain>();
-                x.AddProfile<ViewModelMappingProfileToDomain>();
-            });
+            var autoMapper = new DomainMappingProfile();
+            return autoMapper.GetDomainMappingProfile().CreateMapper();
         }
     }
 }

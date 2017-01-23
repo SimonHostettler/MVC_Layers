@@ -1,5 +1,4 @@
-﻿using MVC_Layers.Data.Configuration;
-using MVC_Layers.Models;
+﻿using MVC_Layers.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

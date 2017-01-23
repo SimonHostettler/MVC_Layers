@@ -51,7 +51,7 @@
   <ItemGroup>
     <Compile Include="Configuration\AngebotConfiguration.cs" />
     <Compile Include="Configuration\KursConfiguration.cs" />
-    <Compile Include="Configuration\KursVerwaltungEntities.cs" />
+    <Compile Include="KursVerwaltungEntities.cs" />
     <Compile Include="Infrastructure\DbFactory.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />
     <Compile Include="Infrastructure\IDbFactory.cs" />

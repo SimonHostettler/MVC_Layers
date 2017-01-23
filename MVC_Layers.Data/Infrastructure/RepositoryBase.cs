@@ -1,5 +1,4 @@
-﻿using MVC_Layers.Data.Configuration;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -28,7 +27,7 @@ namespace MVC_Layers.Data.Infrastructure
         protected RepositoryBase(IDbFactory dbFactory)
         {
             DbFactory = dbFactory;
-            dbSet = dbContext.Set<T>();
+            dbSet = DbContext.Set<T>();
         }
 
         public virtual void Add(T entity)

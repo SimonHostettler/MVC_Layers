@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace MVC_Layers
+namespace MVC_Layers.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {
